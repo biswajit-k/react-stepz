@@ -60,9 +60,14 @@ export const useStepProgress = ({ steps, startingStep }: UseStepProgressOptions)
     setIsError(false);
   };
 
+  const setStep = (step: number) => {
+    setCurrentStep(step);
+  };
+
   return {
     stepForward,
     stepBackwards,
-    currentStep
+    currentStep,
+    setStep
   };
 };

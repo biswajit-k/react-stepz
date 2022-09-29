@@ -21,6 +21,7 @@ export interface UseStepProgressOptions {
 export interface UseStepProgressReturn {
   stepForward(): void;
   stepBackwards(): void;
+  setStep(step: number): void;
   currentIndex: number;
   getProps: StepProgressProps;
 }
